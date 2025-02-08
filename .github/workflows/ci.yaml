@@ -87,3 +87,4 @@ jobs:
       with:
         name: pwgen-binaries-${{ matrix.os }}-${{ matrix.go }}
         path: build/*
+        overwrite: true
