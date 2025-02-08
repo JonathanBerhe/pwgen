@@ -52,7 +52,7 @@ jobs:
       run: make coverage
       
     - name: Upload coverage report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: coverage-report-${{ matrix.os }}-${{ matrix.go }}
         path: |
@@ -83,7 +83,7 @@ jobs:
       run: make build-all
 
     - name: Upload binaries
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: pwgen-binaries-${{ matrix.os }}-${{ matrix.go }}
         path: build/*
