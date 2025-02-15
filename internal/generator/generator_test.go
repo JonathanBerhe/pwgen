@@ -31,6 +31,14 @@ func TestNew(t *testing.T) {
 			wantErr: true,
 		},
 		{
+			name: "max length exceeded",
+			config: &Config{
+				Length: 257,
+				Type:   "basic",
+			},
+			wantErr: true,
+		},
+		{
 			name: "valid custom config",
 			config: &Config{
 				Length:      8,
