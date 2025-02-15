@@ -18,7 +18,7 @@ The password generator supports various command-line flags to customize password
 pwgen [flags]
 
 Flags:
-  --length      Password length (default: 12)
+  --length      Password length (default: 12, max 256)
   --type        Password type: basic, alphanumeric, complex, memorable, pin, custom (default: complex)
   --count       Number of passwords to generate (default: 1)
   --chars       Custom character set for password generation (required for custom type)
